@@ -1,0 +1,283 @@
+body {
+
+  font-family: 'Inter', sans-serif;
+
+  min-height: 100vh;
+  margin: 0;
+}
+
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+          
+
+    
+        /* The Parent Container */
+        #header {
+            display: flex;
+             align-items: center; /* Centers items vertically */
+            gap: 40px;           
+            padding: 40px;
+            max-width: 1100px;
+            margin: 0 auto;      /* Centers the whole section on the page */
+            font-family: sans-serif;
+        }
+
+        /* Image Styling */
+        .header-image img {
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            display: block;
+        }
+
+        /* Text Content Box */
+        .text-content {
+            flex: 1; /* Makes the text fill the remaining space */
+        }
+
+        /* Heading Styles */
+        .hero-name {
+            color: gray;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 8px;
+        }
+
+        .main-title {
+            font-size: 42px;
+            font-weight: 800;
+            margin: 0 0 20px 0;
+            color: grey;
+        }
+
+        /* The Paragraph "Reset" */
+        .profile-description {
+            font-size: 18px;       /* Keeps text at a readable size */
+            line-height: 1.6;      /* Adds space between lines */
+                    font-weight: normal;   /* Ensures it doesn't look like a bold header */
+            margin: 0;
+        }
+
+        /* Responsive Fix: Stack them on top of each other on mobile */
+        @media (max-width: 768px) {
+            #header {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+.main-titles{
+     font-size: 42px;
+            font-weight: 800;
+            margin: 0 0 20px 0;
+            color: silver;
+text-align: center;
+}
+.hero-names{
+    color: gray;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 8px;
+  padding-left: 20px;
+}
+.img{
+    display: flex;
+    
+             align-items: center; /* Centers items vertically */
+            gap: 40px;           
+            padding: 40px;
+            max-width: 1100px;
+            margin: 0 auto;      /* Centers the whole section on the page */
+            font-family: sans-serif;
+        
+}
+
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  padding: 50px;
+}
+
+.service-card {
+  /* THE BORDER RADIUS */
+  border-radius: 24px;
+  
+  /* THE GLASS EFFECT */
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px); /* Safari support */
+  
+  /* STYLING */
+  padding: 40px 30px;
+  text-align: center;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* Subtle Glow on Hover */
+.service-card:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+
+.icon {
+  font-size: 40px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+h3 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #cbd5e1;
+  margin-bottom: 20px;
+}
+
+.dots {
+  color: rgba(255, 255, 255, 0.3);
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+
+/* The White Card */
+.contact-card {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    width: 350px;
+}
+
+h1 { margin-bottom: 5px; font-size: 24px; }
+p { color: #666; margin-bottom: 20px; font-size: 14px; }
+
+/* The Input Fields */
+label {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Keeps inputs from being too wide */
+}
+
+/* The Button */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+/* Footer Base Styles */
+.site-footer {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 60px 20px 20px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    gap: 40px;
+}
+
+/* Column Styling */
+.footer-column {
+    flex: 1;
+    min-width: 200px; /* Ensures columns don't get too skinny */
+}
+
+.footer-column h3, .footer-column h4 {
+    margin-bottom: 20px;
+    color: #007bff; /* Accent color */
+}
+
+.footer-column p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #bbb;
+}
+
+/* List Styling */
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #bbb;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #ffffff;
+}
+
+/* Bottom Bar */
+.footer-bottom {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    font-size: 12px;
+    color: #777;
+}
+
+/* MEDIA RESPONSIVENESS */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* Stacks columns on top of each other */
+        text-align: center;
+    }
+
+    .footer-column {
+        margin-bottom: 20px;
+    }
+}
+html{
+    scroll-behavior: smooth;
+}
