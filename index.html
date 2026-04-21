@@ -6,6 +6,8 @@
     <title>Benjamin Effiong | Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
+    <script src="java.js"></script>
+    <script src="tailwindconfiguration.js"></script>
     </head>
 <body class="bg-slate-900 text-white">
    <nav>
@@ -86,34 +88,32 @@
 </div>
 </section>
 
-<section id="services" class="py-20 px-10">
 
-<h1 class="main-titles">OUR SERVICES</h1>
+    <section id="services">
+        <h1 class="section-title center">OUR SERVICES</h1>
+        <div class="service-grid">
+            <div class="service-card">
+                <span class="icon">🌐</span>
+                <h3>Web Development</h3>
+                <p>Turning complex requirements into polished, high-performance websites.</p>
+                <div class="dots">...</div>
+            </div>
+            <div class="service-card">
+                <span class="icon">📂</span>
+                <h3>Structured Code</h3>
+                <p>I write clean, documented, and modular code that makes your website easy to update.</p>
+                <div class="dots">...</div>
+            </div>
+            <div class="service-card">
+                <span class="icon">🚀</span>
+                <h3>SEO & Launch</h3>
+                <p>Ensuring your site is fully optimized for search engines right out of the gate.</p>
+                <div class="dots">...</div>
+            </div>
+        </div>
+    </section>
 
-<div class="service-grid">
-    
-    <div class="service-card">
-        <span class="icon">🌐</span>
-        <h3>Web Development</h3>
-        <p>Turning complex requirements into polished, high-performance websites that work perfectly on every screen.</p>
-        <div class="dots">...</div>
-    </div>
 
-    <div class="service-card">
-        <span class="icon">📂</span>
-        <h3>Structured Code</h3>
-        <p>I write clean, documented, and modular code that makes your website easy to update and scale as you grow.</p>
-        <div class="dots">...</div>
-    </div>
-
-    <div class="service-card">
-        <span class="icon">🚀</span>
-        <h3>SEO & Launch</h3>
-        <p>Ensuring your site is fully optimized for search engines and lightning-fast right out of the gate.</p>
-        <div class="dots">...</div>
-    </div>
-</div>
-</section>
 <footer class="site-footer">
     <div class="footer-container">
         <div class="footer-column">
@@ -124,9 +124,9 @@
         <div class="footer-column">
             <h4>Quick Links</h4>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">About Us</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </div>
@@ -146,3 +146,5 @@
 </footer>   
 </body>
 </html>
+
+
