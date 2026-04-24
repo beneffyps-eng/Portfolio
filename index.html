@@ -10,48 +10,49 @@
     <script src="tailwindconfiguration.js"></script>
     </head>
 <body class="bg-slate-900 text-white">
-   <nav>
-  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 ">
-    <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+<nav class="bg-slate-900 border-b border-slate-800 sticky top-0 z-50">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <a href="#" class="flex items-center space-x-3">
         <div class="h-14 w-14 bg-blue-600 rounded-full flex items-center justify-center font-bold">BE</div>
-        <span class="self-center text-xl font-semibold whitespace-nowrap">BENJAMIN EFFIONG</span>
+        <span class="self-center text-xl font-semibold">BENJAMIN EFFIONG</span>
     </a>
     
-    <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-        <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 font-medium rounded-lg text-sm px-4 py-2">Get started</button>
-<button data-collapse-toggle="navbar-fixed" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-600">
-            <span class="sr-only">Open main menu</span>
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
-        </button>
-    </div>
+    <button id="menu-toggle" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden hover:bg-gray-700 focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+    </button>
 
-    <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-fixed">
-      <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
-        <li>
-            <a href="#home" class="relative group block py-2 px-3 text-white">Home
-                <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
-            </a>
-        </li>
-        <li>
-            <a href="#about" class="relative group block py-2 px-3 text-white">About
-                <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
-            </a>
-        </li>
-        <li>
-            <a href="#services" class="relative group block py-2 px-3 text-white">Services
-                <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
-            </a>
-        </li>
-        <li>
-            <a href="" class="relative group block py-2 px-3 text-white">Contact
-                <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
-            </a>
-        </li>
-      </ul>
+    <div class="hidden w-full md:flex md:w-auto md:order-1" id="navbar-menu">
+    <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium md:space-x-8 md:flex-row md:mt-0 md:border-0">
+  <li>
+    <a href="#home" class="relative group block py-2 px-3 text-white">
+      Home
+      <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+    </a>
+  </li>
+  <li>
+    <a href="#about" class="relative group block py-2 px-3 text-white">
+      About
+      <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+    </a>
+  </li>
+  <li>
+    <a href="#services" class="relative group block py-2 px-3 text-white">
+      Services
+      <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+    </a>
+  </li>
+  <li>
+    <a href="https://wa.me/2347012307293" class="relative group block py-2 px-3 text-white">
+      Contact
+      <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+    </a>
+  </li>
+</ul>  
     </div>
   </div>
 </nav>
-
 
 
 
@@ -72,7 +73,7 @@
     </div>
 </div>
 <div class="buttons">
-<a href="#">
+<a href="https://wa.me/2347012307293">
     <button class="button-class">
         <img src="phone.jpeg" alt="" width="50px">
         Contact Me</button>
@@ -80,24 +81,22 @@
 </a>
 </div>
 
-<div class="img">
-    <div>
-        <section id="about" class="py-20 bg-slate-800/50">
-    <h1 class="main-titles">About Me</h1>
-    
-    <h1 class="hero-names" >Benjamin Effiong | Full-Stack Web Developer</h1>
-    <p style="padding-left: 20px;">I build clean, functional web applications with a focus on evolution over ego.</p>
-    <br>
-    <p style="max-width: 60%; padding-left: 20px;">As a developer just entering the field, I don't just bring code to the table—I bring a radical openness to change. The web landscape evolves every day, and I’ve built my workflow to be just as fluid. I specialize in turning complex problems into simple, responsive user experiences, and I’m always ready to adapt my stack to meet the needs of the project.</p>
-</div>
-<div class="header-image">
-    <img src="bg1.jpeg" alt="" srcset="" >
-</div>
-</div>
+<section id="about" class="py-20 bg-slate-800/50">
+    <div class="img"> 
+        <div class="text-content">
+            <h1 class="main-titles">About Me</h1>
+            <h2 class="hero-names">Benjamin Effiong | Full-Stack Web Developer</h2>
+            <p class="about-p">I build clean, functional web applications with a focus on evolution over ego.</p>
+            <p class="about-p">As a developer just entering the field, I don't just bring code to the table—I bring a radical openness to change. The web landscape evolves every day, and I’ve built my workflow to be just as fluid.</p>
+        </div>
+        <div class="header-image">
+            <img src="bg1.jpeg" alt="Benjamin About">
+        </div>
+    </div>
 </section>
 
 <div class="buttons">
-<a href="#">
+<a href="https://wa.me/2347012307293">
     <button class="button-classe">
         <img src="phone.jpeg" alt="" width="50px">
         Contact Me</button>
@@ -129,7 +128,7 @@
         </div>
     </section>
 <div class="buttons">
-<a href="#">
+<a href="https://wa.me/2347012307293">
     <button class="button-classs">
         <img src="phone.jpeg" alt="" width="50px">
         Contact Me</button>
@@ -151,7 +150,7 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#about">About Us</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="https://wa.me/2347012307293">Contact</a></li>
             </ul>
         </div>
 

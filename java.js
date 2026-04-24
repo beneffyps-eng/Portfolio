@@ -1,33 +1,28 @@
-// Function to handle the Mobile Menu Toggle
-const initApp = () => {
-    const menuBtn = document.getElementById('mobile-menu');
-    const navList = document.getElementById('nav-list');
+document.addEventListener('DOMContentLoaded', function () {
+    const menuToggle = document.getElementById('menu-toggle');
+    const navbarMenu = document.getElementById('navbar-menu');
+    const menuIcon = document.getElementById('menu-icon');
 
-    // Toggle logic: when button clicked, add/remove 'active' class
-    menuBtn.addEventListener('click', () => {
-        navList.classList.toggle('active');
-    });
+    menuToggle.addEventListener('click', function () {
+        // Toggle the 'show' class
+        navbarMenu.classList.toggle('hidden');
+        navbarMenu.classList.toggle('show');
 
-    // Close menu when a link is clicked
-    const links = document.querySelectorAll('.nav-links a');
-    links.forEach(link => {
-        link.addEventListener('click', () => {
-            navList.classList.remove('active');
-        });
-    });
-
-    // Add a shadow to the navbar when scrolling down
-    window.addEventListener('scroll', () => {
-        const navbar = document.querySelector('.navbar');
-        if (window.scrollY > 50) {
-            navbar.style.boxShadow = '0 10px 30px rgba(0,0,0,0.5)';
-            navbar.style.background = '#0a101f';
+        // Optional: Change icon from Hamburger to X when open
+        if (navbarMenu.classList.contains('show')) {
+            menuIcon.setAttribute('d', 'M6 18L18 6M6 6l12 12');
         } else {
-            navbar.style.boxShadow = 'none';
-            navbar.style.background = '#0f172a';
+            menuIcon.setAttribute('d', 'M4 6h16M4 12h16m-7 6h7');
         }
     });
-};
 
-// Run the script once the page is fully loaded
-document.addEventListener('DOMContentLoaded', initApp);
+    // Close menu when a link is clicked (good for mobile UX)
+    const navLinks = document.querySelectorAll('#navbar-menu a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            navbarMenu.classList.add('hidden');
+            navbarMenu.classList.remove('show');
+            menuIcon.setAttribute('d', 'M4 6h16M4 12h16m-7 6h7');
+        });
+    });
+});
